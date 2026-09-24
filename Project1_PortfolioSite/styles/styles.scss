@@ -18,13 +18,43 @@ div#skipLink {
     top: 0px;
   }
 }
-nav ul{
+
+header div#header-content {
     display: flex;
     flex-direction: row;
-    li{
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: $main-color;
+    margin: 0;
+    justify-self: flex-start;
+}
+
+nav {
+    a {
+        text-decoration: none;
+        color: $main-color;
+        font-size: 1.2rem;
+    }
+
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+        li{
         margin: 8px;
+        padding: 0 12px;
+        text-decoration: none;
+        }
     }
 }
+
 main {
     display: flex;
     flex-direction: column;

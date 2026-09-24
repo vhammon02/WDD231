@@ -7,7 +7,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build --emptyOutDir",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scss": "sass --watch styles.scss styles.css"
   },
   "keywords": [],
   "author": "",
@@ -15,4 +16,5 @@
   "dependencies": {
     "vite": "^6.2.3"
   }
+  
 }
