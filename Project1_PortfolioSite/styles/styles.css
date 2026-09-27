@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
 div#skipLink a {
   position: absolute;
   color: #fff;
@@ -28,6 +38,30 @@ h1 {
   justify-self: flex-start;
 }
 
+button#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+@media (min-width: 480px) {
+  button#menu-toggle {
+    display: none;
+  }
+}
+
+nav .closed {
+  display: none;
+}
+nav .open {
+  display: block;
+}
+@media (min-width: 480px) {
+  nav {
+    display: block;
+  }
+}
 nav a {
   text-decoration: none;
   color: #333;
@@ -48,11 +82,47 @@ main {
   display: flex;
   flex-direction: column;
   color: #333;
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 main section {
   height: 150vh;
+}
+
+div#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 16px;
   background-color: #f5f5f5;
+  overflow-x: auto;
+}
+
+div#projects div.project-card {
+  width: 200px;
+  height: 200px;
+  margin: 12px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+div#projects div.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+div#projects div.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+div#projects div.project-card h3 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -24,7 +24,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Projects</a></li>
                 <li><a href="index.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -36,21 +36,22 @@
 
     <main>
         <section id="main-content">
-            <div>
-                <h2>Welcome to My Portfolio</h2>
-                <p>This is a showcase of my work and projects.</p>  
-            </div>
-                <select id="projectsFilter">
-                    <option value="all">Show All</option>
-                    <option value="ui">UI Design Projects</option>
-                    <option value="wdd">Web Development Projects</option>
-                    <option value="gd">Graphic Design Projects</option>
-                </select>
-                <div id="projects">
-                    <!-- Project cards will be dynamically generated here -->
-                </div>
+            <div id="form-container">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch, please fill out the form below:</p>
+                <form id="contactForm" action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
