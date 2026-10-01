@@ -1,0 +1,17 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "components/header";
+@use "components/home.scss";
+@use "components/footer";
+@use "components/project-cards";
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    max-width: 1360px;
+    margin: 0 auto;
+}
