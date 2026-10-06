@@ -1,45 +1,17 @@
-const projects = [
-    {
-        title: "Project 1",
-        description: "This is a description of Project 1.",
-        image: "../images/project1.jpg",
-        tag: "ui"
-    },
-    {
-        title: "Project 2",
-        description: "This is a description of Project 2.",
-        image: "../images/project2.jpg",
-        tag: "wdd"
-    },
-    {
-        title: "Project 3",
-        description: "This is a description of Project 3.",
-        image: "../images/project3.jpg",
-        tag: "gd"
-    }   
-]
-const projectsContainer = document.getElementById("projects");
+import projects from "./projects.js";
 
 const createProjects = function() {
-    document.getElementById("projects").innerHTML = ""; //reset the projects container
-    let filter = document.getElementById("projectsFilter").value; // Get the selected filter value
+    const projectsContainer = document.getElementById("projects");
+    const filterSelect = document.getElementById("projectsFilter");
+    if (!projectsContainer || !filterSelect) return;
 
-    function filterProjects(filter) {
-        const filteredProjects = projects.filter(project => project.tag === filter);
-        return filteredProjects;
-    }
+    const projectList = Object.values(projects);
+    const filter = filterSelect.value;
+    const filteredProjects = filter === "all"
+        ? projectList
+        : projectList.filter(project => project.tag === filter);
 
-    let filteredProjects = [];
-
-    if (filter === "all") {
-        filteredProjects = projects;
-    }
-    else {
-       filteredProjects = filterProjects(filter);
-    }
-
-    document.getElementById("projects").innerHTML = ""; //reset the projects container
-
+    projectsContainer.innerHTML = "";
     filteredProjects.forEach(project => {
         const projectCard = document.createElement("div");
         projectCard.classList.add("project-card");
@@ -53,16 +25,21 @@ const createProjects = function() {
 
         projectsContainer.appendChild(projectCard);
     });
-
 };
-const filterSelect = document.getElementById("projectsFilter");
-filterSelect.addEventListener("change", createProjects); // Event listener to create projectts when the change happens in the select element
 
-createProjects(); // Call the function to create projects on page load
+const filterSelect = document.getElementById("projectsFilter");
+filterSelect?.addEventListener("change", createProjects);
+
+createProjects();
 
 
 // Menu toggle functionality
-document.getElementById("menu-toggle").addEventListener("click", function() {
-    const nav = document.querySelector("nav");
-    nav.classList.toggle("open");
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("header nav");
+
+menuToggle?.addEventListener("click", function() {
+    if (!nav) return;
+
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
 });

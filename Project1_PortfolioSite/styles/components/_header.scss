@@ -1,8 +1,8 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-* {
-  box-sizing: border-box; // Ensures padding doesn't push width beyond 100%, suggested by google gemini
+.hidden {
+    display: none;
 }
 
 div#skipLink {
@@ -28,6 +28,7 @@ header {
 
     div#header-content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -55,31 +56,44 @@ button#menu-toggle {
     }
 }
 
-nav {
-    .closed{
+header nav {
         display: none;
-    }
-    .open{
+        flex-basis: 100%;
+
+        &.open {
         display: block;
     }
-    @include responsive("small") {
-        display: block;
-    }
-    a {
-        text-decoration: none;
-        color: $main-color;
-        font-size: 1.2rem;
-    }
 
-
-    ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-        li{
-        margin: 8px;
-        padding: 0 12px;
-        text-decoration: none;
+        @include responsive("small") {
+            display: block;
+            flex-basis: auto;
         }
-    }
+
+        a {
+            text-decoration: none;
+            color: $main-color;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            padding-top: 8px;
+
+            li {
+                margin: 8px;
+                padding: 0 12px;
+                text-decoration: none;
+            }
+        }
+
+        @include responsive("small") {
+            ul {
+                flex-direction: row;
+            }
+        }
 }

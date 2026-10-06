@@ -5,6 +5,15 @@
 @use "components/footer";
 @use "components/project-cards";
 
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
 
 body{
     display: flex;
