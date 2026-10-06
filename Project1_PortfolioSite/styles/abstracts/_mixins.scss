@@ -1,0 +1,16 @@
+@use "sass:map";
+
+$breakpoints: (
+    "small": 480px,
+    "medium": 768px,
+    "large": 1024px,
+    "xlarge": 1200px
+);
+
+//used https://medium.com/@jkohne/responsive-design-and-css-columns-using-sass-15b477a4ff83 for tutorial to refresh my meomory of mixins
+@mixin responsive($size) {
+
+    @media (min-width: map.get($breakpoints, $size)) {
+      @content;
+  }
+}

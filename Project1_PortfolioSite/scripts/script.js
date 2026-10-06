@@ -2,27 +2,27 @@ const projects = [
     {
         title: "Project 1",
         description: "This is a description of Project 1.",
-        image: "images/project1.jpg",
+        image: "../images/project1.jpg",
         tag: "ui"
     },
     {
         title: "Project 2",
         description: "This is a description of Project 2.",
-        image: "images/project2.jpg",
+        image: "../images/project2.jpg",
         tag: "wdd"
     },
     {
         title: "Project 3",
         description: "This is a description of Project 3.",
-        image: "images/project3.jpg",
+        image: "../images/project3.jpg",
         tag: "gd"
     }   
 ]
 const projectsContainer = document.getElementById("projects");
 
 const createProjects = function() {
-    
-    filter = document.getElementById("projectsFilter").value; // Get the selected filter value
+    document.getElementById("projects").innerHTML = ""; //reset the projects container
+    let filter = document.getElementById("projectsFilter").value; // Get the selected filter value
 
     function filterProjects(filter) {
         const filteredProjects = projects.filter(project => project.tag === filter);

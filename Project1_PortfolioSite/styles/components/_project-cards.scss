@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+div#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 16px;
+    background-color: $background-color-2;
+    overflow-x: auto;
+}
+
+div#projects div.project-card {
+    width: 200px;
+    height: 200px;
+    margin: 12px;
+    padding: 12px;
+    background-color: $background-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    h3 {
+        margin-top: 12px;
+        font-size: 1.2rem;
+        color: $main-color;
+    }
+}

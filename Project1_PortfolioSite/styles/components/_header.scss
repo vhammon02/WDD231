@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+* {
+  box-sizing: border-box; // Ensures padding doesn't push width beyond 100%, suggested by google gemini
+}
+
+div#skipLink {
+  a {
+  position: absolute;
+  color: #fff;
+  top: -40px;
+  left: 0;
+  background-color: none;
+  z-index: 100;
+  padding: 8px;
+  transition: top 0.5s ease-out;        
+  }
+  a:focus {
+    color: #ffa0a0;
+    top: 0px;
+  }
+}
+
+header {
+    max-width: 100%;
+    overflow: hidden;
+
+    div#header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: $main-color;
+    margin: 0;
+    justify-self: flex-start;
+}
+
+button#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $main-color;
+
+    @include responsive("small") {
+        display: none;
+    }
+}
+
+nav {
+    .closed{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+    @include responsive("small") {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color: $main-color;
+        font-size: 1.2rem;
+    }
+
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+        li{
+        margin: 8px;
+        padding: 0 12px;
+        text-decoration: none;
+        }
+    }
+}
