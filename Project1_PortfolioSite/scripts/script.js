@@ -21,7 +21,7 @@ const projects = [
 const projectsContainer = document.getElementById("projects");
 
 const createProjects = function() {
-    document.getElementById("projects").innerHTML = ""; //reset the projects container
+    
     filter = document.getElementById("projectsFilter").value; // Get the selected filter value
 
     function filterProjects(filter) {
@@ -37,6 +37,8 @@ const createProjects = function() {
     else {
        filteredProjects = filterProjects(filter);
     }
+
+    document.getElementById("projects").innerHTML = ""; //reset the projects container
 
     filteredProjects.forEach(project => {
         const projectCard = document.createElement("div");

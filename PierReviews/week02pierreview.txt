@@ -1,0 +1,30 @@
+Competency: [Week 2: Peer Review]
+Slices reviewed with peer: [Semantic HTML, CSS Styling, Responsive Design, JS DoM manipulation and evnts, data driven rendering]
+Date: [October 1st]
+Peer conversation partner: [Garrison Liu]
+Instructor or TA: [Name]
+
+What I demonstrated across the competency:
+
+I demonstrated my ability to create a web page with semantic
+HTML by creating a structured layout for a portfolio website
+hom page. I used appropriate HTML tags to ensure that the 
+content is accessible and meaningful. I included the hidden
+
+What my peer helped me notice:
+
+[Brief description]
+
+Evidence I showed for the slices:
+
+- [Artifact]
+- [Test or verification]
+- [Explanation, challenge, or decision]
+
+Peer review status: [Every slice reviewed / More peer review needed]
+
+Competency pass-off result: [Passed / Not yet / Pass with next step]
+
+My next step:
+
+[Specific next action]

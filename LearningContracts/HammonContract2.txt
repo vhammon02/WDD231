@@ -1,0 +1,47 @@
+WDD 231 — Learning Contract 2
+
+Student: Von Hammon
+Project: Portfolio page
+Contract period: W02-W03
+
+Purpose
+I will develop and evaluate my portfolio page as evidence of my learning in WDD 231. I will use the course template and relevant references in the skills folder to guide the work, and I will document my results honestly.
+
+Learning goals
+
+1. Semantic and accessible HTML
+Goal: Build a clear, meaningful structure that can be understood and navigated by a broad range of users.
+Plan: Use appropriate semantic elements, logical heading order, descriptive link text, accessible labels, and text alternatives for meaningful images. Check keyboard navigation and visible focus.
+Evidence: The finished page has a logical structure and its content and controls can be accessed using a keyboard. I will review it with an accessibility checker and address issues found.
+
+2. Responsive CSS and inclusive visual design
+Goal: Make the portfolio usable and readable on different screen sizes and for users with varied needs.
+Plan: Use flexible layouts and responsive styles; test narrow and wide viewports; check text readability, contrast, spacing, and focus visibility; and avoid communicating information through color alone.
+Evidence: The page remains usable at tested viewport sizes without unintended horizontal scrolling, and its visual design supports clear reading and interaction.
+
+3. JavaScript, DOM manipulation, and events
+Goal: Use JavaScript to provide purposeful interaction on the portfolio page.
+Plan: Select and update DOM elements in response to user actions using event listeners. Give interactive controls clear names and ensure they work with keyboard input where applicable.
+Evidence: At least one useful feature responds as intended to user input. I will test the feature and check the browser console for errors.
+
+4. Data-driven rendering and modules
+Goal: Organize repeated portfolio content as data and render it with maintainable JavaScript.
+Plan: Store repeatable items, such as projects, in a structured data collection; generate their display from that data; and use modules to separate responsibilities where appropriate.
+Evidence: Repeated content is rendered from data rather than maintained as duplicated markup, and the code is organized into understandable, reusable responsibilities.
+
+Work plan
+1. Review the course template and relevant skills-folder references.
+2. Implement the semantic HTML and responsive, inclusive styles.
+3. Add accessible interaction with JavaScript and DOM events.
+4. Render repeatable portfolio content from structured data and organize the code into modules as appropriate.
+5. Test the page with keyboard navigation and at multiple viewport sizes; review accessibility and fix discovered issues.
+6. Record evidence and complete the reflection below.
+
+Completion and reflection
+Evidence/links to portfolio and relevant code: [Add links or file locations.]
+What I completed for each goal: [Summarize the work and evidence.]
+Challenge and how I addressed it: [Describe one example.]
+What I learned and what I will improve next: [Reflect on your progress.]
+
+Student: ______________________________    Date: ______________
+Instructor/mentor feedback: ______________________________________________

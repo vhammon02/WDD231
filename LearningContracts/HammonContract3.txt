@@ -1,0 +1,76 @@
+Learning Contract 3
+
+Student Name: V. Hammon
+Course: WDD231
+Instructor: 
+Date: Oct 3
+
+Purpose
+I am creating this learning contract to improve my understanding of web design and development, strengthen my problem-solving skills, and build consistent habits that help me complete assignments with confidence and quality.
+
+Core Skills to Develop
+- Flexbox and Grid layouts
+- Mobile-first responsive behavior
+- Typography, spacing, and visual hierarchy
+- CSS custom properties and organized shared/component styles
+- Resilient layouts for long text and different images
+- Color contrast and readable text sizing
+- Reflow, zoom, and text enlargement
+- Motion and touch-target considerations
+- HTML semantics, JavaScript fundamentals, debugging, and steady study habits
+Learning Goals
+1. Complete course assignments on time and with attention to detail.
+2. Create mobile-first layouts with Flexbox or Grid that adapt to different screen sizes.
+3. Improve page clarity with intentional typography, spacing, and visual hierarchy.
+4. Use CSS custom properties and organized shared/component styles to make code consistent and maintainable.
+5. Build resilient layouts that handle long text and different images without overflow or loss of content.
+6. Check color contrast, text sizing, reflow, zoom, and text enlargement for accessibility.
+7. Consider motion preferences and ensure interactive controls have usable touch targets.
+8. Practice debugging methodically and build confidence in asking for help while trying problems independently.
+
+Action Plan
+- Set aside focused study time each week for class materials and coding practice.
+- Add addtional page to website to demonstrate more features
+- Start with a small-screen design, then use Flexbox or Grid to improve and adapt the layout for larger screens.
+- Test pages at different viewport sizes and with zoom, enlarged text, long text, and varied images.
+- Use SCSS variables and custom properties for repeated values and organize shared and component styles clearly.
+- Review typography, spacing, contrast, readable text sizing, motion, and touch-target sizes.
+- Break larger tasks into smaller steps and revise work after testing and receiving feedback.
+- Use resources such as course materials, instructor feedback, and peer discussion to improve my understanding.
+
+Evidence of Learning
+I will know I am making progress when I can:
+- explain how my HTML structure supports the page content
+- create mobile-first Flexbox or Grid layouts that reflow across screen sizes
+- use typography, spacing, and visual hierarchy to make content clear and readable
+- organize reusable styles with CSS custom properties
+- keep layouts usable with long text, different images, zoom, and enlarged text
+- check contrast, motion, and touch targets for accessibility and usability
+- write JavaScript that solves a problem without relying only on copied code
+- fix basic errors in my own code by testing, reviewing, and revising
+- complete assignments with fewer last-minute mistakes and greater confidence
+
+Support and Accountability
+I will support my learning by:
+- keeping a regular schedule for work and studying
+- staying organized with assignments and deadlines
+- asking questions early when I feel stuck
+- reviewing feedback and applying it to future work
+
+I will be accountable by checking my progress each week and adjusting my plan when needed.
+
+Success Criteria
+This contract is successful if I:
+- actively participate in the course and complete assigned work
+- demonstrate improvement in coding quality and problem-solving
+- submit work that is complete, readable, and thoughtfully created
+- show consistent effort and a willingness to learn from mistakes
+
+Reflection
+At the end of this learning period, I will reflect on what helped me improve, what challenged me, and what I will do differently next time to continue growing as a student and developer.
+
+Student Signature: ______________________________
+Date: ______________________________
+
+Instructor Signature: __________________________
+Date: ______________________________
