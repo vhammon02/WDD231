@@ -1,20 +1,20 @@
 const projects = {
     project1: {
-        title: "Project 1",
-        description: "This is a description of Project 1.",
-        image: "../images/project1.jpg",
+        title: "KalorieTrak - A Calorie Tracking App",
+        description: "A simple app to track daily calorie intake and expenditure.",
+        image: "../images/KalorieTrak.png",
         tag: "ui"
     },
     project2: {
-        title: "Project 2",
-        description: "This is a description of Project 2.",
-        image: "../images/project2.jpg",
+        title: "StyleStage Team Project",
+        description: "A collaborative project inspired by the stylestage community website.",
+        image: "../images/StyleStage.png",
         tag: "wdd"
     },
     project3: {
-        title: "Project 3",
-        description: "This is a description of Project 3.",
-        image: "../images/project3.jpg",
+        title: "Chimera Crusade",
+        description: "Fantasy themed comic project.",
+        image: "../images/ChimeraCrusadeLogoWide.png",
         tag: "gd"
     }
 };

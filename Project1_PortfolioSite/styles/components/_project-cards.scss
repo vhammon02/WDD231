@@ -11,7 +11,6 @@ div#projects {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(clamp(200px, 20vw, 300px), 1fr));
         grid-auto-flow: dense;
-        background-color: red;
         gap: 16px;
     }
     
@@ -19,12 +18,15 @@ div#projects {
 
 div#projects div.project-card {
     width: 100%;
+    max-width: clamp(300px, 50vw, 400px);
     height: auto;
     aspect-ratio: 1 / 1;
     margin: clamp(8px, 1vw, 16px);
     padding: 12px;
     background-color: $background-color;
     border-radius: 8px;
+    position: relative;
+    overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     flex-shrink: 0;
@@ -40,14 +42,25 @@ div#projects div.project-card {
     }
 
     img {
+        position: absolute;
+        inset: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         border-radius: 4px;
+        z-index: 0;
+        opacity: 0.4;
     }
 
     h3 {
+        position: relative;
+        z-index: 1;
         margin-top: 12px;
         font-size: 1.2rem;
         color: $main-color;
+    }
+    p {
+        z-index: 1;
+        position: relative;
     }
 }

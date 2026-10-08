@@ -1,0 +1,61 @@
+Contract: DeVon Hammon: Week 03 Contract
+Date: 10 - 8 - 2026
+Peer conversation partner: Garrison Liu
+
+1. What I demonstrated across the contract:
+
+Across the project I worked on various compentencies while expanding my portfolio
+site to multiple pages. I made sure to use semantic HTML and accessible design practices. I also worked on responsive CSS and inclusive visual design, ensuring that my layouts were mobile-first and adaptable to different screen sizes. Additionally, I implemented JavaScript to enhance interactivity and user experience on my site.
+I also focus on adding responsive design elements and ensuring to implement what we 
+learn in class into my project.
+
+2. What my peer helped me notice:
+
+Adding a theme and colors to my project will help create more visual intrest and the project cards have bad readablility.
+
+3. Evidence I showed for the slices:
+
+For each slice I worked on in Contract 3:
+
+- Slice: Complete assignments on time and with attention to detail
+	- Part of the slice I passed off: Completing assignments on time and carefully.
+	- Evidence on the page: Completed Contract 3 pier review and passed off all slices with Garrison Liu.
+	- 
+- Slice: Create mobile-first layouts using Flexbox or Grid
+	- Part of the slice I passed off: Building a mobile-first, responsive layout.
+	- Evidence on the page: The layout has a mobile-first structure and adaptable sections such as the cards
+      and navigation.
+	- 
+- Slice: Add extra pages to my portfolio site
+	- Part of the slice I passed off: Adding the about and contact pages.
+	- Evidence on the page: Project1_Portfolio includes home, about, and contact pages.
+	- 
+- Slice: Improve typography, spacing, and visual hierarchy
+	- Part of the slice I passed off: Improving readability and visual organization.
+	- Evidence on the page: Typography, spacing, and hierarchy help keep the content clear.
+	- 
+- Slice: Use CSS custom properties and organized shared/component styles
+	- Part of the slice I passed off: Organizing reusable styles in shared and component files.
+	- Evidence on the page: The SCSS is organized into shared and component files.
+	- 
+- Slice: Make layouts usable with long text, images, zoom, and enlarged text
+	- Part of the slice I passed off: [Add the specific usability improvement completed.]
+	- Evidence on the page: [Add evidence from Project1_Portfolio.]
+	- 
+- Slice: Check color contrast, motion, and touch targets for accessibility
+	- Part of the slice I passed off: Applying accessibility and inclusive-design practices.
+	- Evidence on the page: The project demonstrates the accessibility and design goals from Contract 3.
+	- 
+- Slice: Practice debugging and build confidence through steady study habits
+	- Part of the slice I passed off: Practicing debugging and maintaining steady study habits.
+	- Evidence on the page: [Add evidence from Project1_Portfolio.]
+	- 
+
+4. Peer review status: [Every slice reviewed / More peer review needed]
+
+5. Contract pass-off result: 
+- [List each slice] [Passed / Not yet / Pass with next step]
+
+6. My next step:
+
+[Specific next action]
