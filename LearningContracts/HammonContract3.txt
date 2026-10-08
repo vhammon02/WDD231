@@ -30,7 +30,7 @@ Learning Goals
 
 Action Plan
 - Set aside focused study time each week for class materials and coding practice.
-- Add addtional page to website to demonstrate more features
+- Add additional page to website to demonstrate more features
 - Start with a small-screen design, then use Flexbox or Grid to improve and adapt the layout for larger screens.
 - Test pages at different viewport sizes and with zoom, enlarged text, long text, and varied images.
 - Use SCSS variables and custom properties for repeated values and organize shared and component styles clearly.
