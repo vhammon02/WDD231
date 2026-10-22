@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/script.js" type="module" defer></script>
+    <title>Personal Sandbox</title>
+  </head>
+  <body>
+    <header>
+      <div tabindex="0" id="skipLink">
+        <a href="#main-content">Skip to main content</a>
+      </div>
+      <div id="header-content">
+        <h1>DeVon Hammon</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="site-navigation" aria-expanded="false">☰</button>
+        <nav id="site-navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="#main-content" aria-current="page">Sandbox</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="main-content" aria-labelledby="sandbox-heading">
+        <h2 id="sandbox-heading">Pokémon Sandbox</h2>
+        <div id="pokemon-container"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover books and keep a personal reading shelf with reviews and ratings.">
+    <title>OpenShelf | DeVon Hammon</title>
+    <link rel="stylesheet" href="styles/styles.scss">
+    <script type="module" src="scripts/openshelf.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="skipLink">
+            <a href="#main-content">Skip to main content</a>
+        </div>
+        <div id="header-content">
+            <h1>DeVon Hammon</h1>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="site-navigation" aria-expanded="false">☰</button>
+            <nav id="site-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="openshelf.html" aria-current="page">OpenShelf</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="openshelf">
+        <section aria-labelledby="openshelf-title">
+            <h2 id="openshelf-title">OpenShelf</h2>
+            <p>Discover your next read and keep track of books you have finished.</p>
+
+            <section aria-labelledby="book-search-heading">
+                <h3 id="book-search-heading">Discover books</h3>
+                <form id="book-search-form" role="search">
+                    <label for="book-search">Search by title, author, or subject</label>
+                    <input id="book-search" name="query" type="search" required>
+                    <button type="submit">Search books</button>
+                </form>
+                <p id="search-status" class="openshelf-status" role="status" aria-live="polite">
+                    Search the Open Library catalog to find books.
+                </p>
+                <div id="search-results" class="openshelf-book-list" aria-label="Book search results"></div>
+            </section>
+
+            <section aria-labelledby="read-books-heading">
+                <h3 id="read-books-heading">Books I have read</h3>
+                <p>Your shelf and reviews are saved in this browser only; they are not synced to other devices.</p>
+                <p id="read-books-status" class="openshelf-status" role="status" aria-live="polite">
+                    Your saved books will appear here.
+                </p>
+                <div id="read-books" class="openshelf-book-list" aria-label="Books you have read"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
+
+<!-- To enable: remove the comment above, uncomment the OpenShelf navigation links, and enable
+     the OpenShelf stylesheet import in styles/styles.scss. -->

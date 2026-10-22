@@ -1,0 +1,55 @@
+WDD 231 — Learning Contract 4
+
+Student: Von Hammon
+Project: Portfolio page
+Contract period: W04-W05
+
+Purpose
+I will extend my personal portfolio with data loaded from a suitable, documented public API. I will use this work to practice asynchronous JavaScript, represent each request outcome clearly, and verify requests in the browser. I will keep the portfolio usable when data is unavailable and will not expose secrets in client-side code.
+
+Learning goals
+
+1. Fetch data with async/await
+Goal: Load external data from the portfolio without blocking the page or hiding request failures.
+Plan: Choose a documented public endpoint that adds useful information to the portfolio. Write an asynchronous function that uses fetch and await, and call it when the relevant page content is ready.
+Evidence: The portfolio requests the selected endpoint and handles the fulfilled or rejected request without uncaught errors. I can explain how async/await represents the asynchronous work.
+
+2. Check response status and handle JSON
+Goal: Distinguish successful HTTP responses from unsuccessful ones and safely read the response data.
+Plan: Check the response status or ok property before parsing the body as JSON. Handle JSON parsing and request failures so unsuccessful responses do not appear as successful data.
+Evidence: A successful response is parsed and used; an unsuccessful response produces an understandable error state. I can demonstrate how the code checks the response before using its JSON.
+
+3. Transform and render API data
+Goal: Convert the API response into clear, useful portfolio content.
+Plan: Inspect the response shape, select the fields the page needs, and transform them into a consistent structure. Render the resulting items into the page using DOM methods and safe text insertion.
+Evidence: API data appears in a readable, consistent layout, and rendering works with the expected response fields without duplicating hard-coded markup for each item.
+
+4. Show loading, empty, and error states
+Goal: Keep visitors informed while data is loading and when no usable results are available.
+Plan: Provide a loading message before the request completes, a useful empty state when the response contains no items, and a clear error message if the request or response handling fails. Ensure the states do not leave stale content that could be mistaken for current results.
+Evidence: I can test and show the loading, success, empty, and error states. Each state is visible, understandable, and does not break the rest of the portfolio.
+
+5. Inspect network activity and handle the environment safely
+Goal: Verify how the request behaves and avoid exposing sensitive information in a client-side portfolio.
+Plan: Use the browser Network panel to inspect the request URL, method, status, response, and timing; use the console to investigate errors. Use a public endpoint that does not require a secret, and do not place API keys, tokens, or other credentials in source code or committed files.
+Evidence: I can explain the request and response using the Network panel and show that the implementation contains no exposed credentials. I will check the page in its intended local or deployed environment.
+
+Work plan
+1. Choose a documented public API and identify the response fields that are useful on my portfolio.
+2. Add an accessible location in the page for the API-powered content and its status messages.
+3. Implement the fetch request with async/await, check the response status, and parse JSON only after a successful response.
+4. Transform the response into the fields the interface needs and render the content safely.
+5. Add and test loading, success, empty, and error states.
+6. Inspect the request and response with browser developer tools; confirm no secrets are exposed and the portfolio remains usable if the request fails.
+7. Record evidence and complete the reflection below.
+
+Completion and reflection
+Evidence/links to portfolio and relevant code: [Add links or file locations.]
+API selected and why it fits the portfolio: [Name the API and describe the content it provides.]
+What I completed for each goal: [Summarize the work and evidence.]
+How I tested loading, success, empty, and error states: [Describe the results.]
+Challenge and how I addressed it: [Describe one example.]
+What I learned and what I will improve next: [Reflect on your progress.]
+
+Student: ______________________________    Date: ______________
+Instructor/mentor feedback: ______________________________________________

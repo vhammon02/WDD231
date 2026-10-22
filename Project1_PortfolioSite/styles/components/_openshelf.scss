@@ -1,0 +1,88 @@
+/*
+OpenShelf style reference
+To activate, remove the leading // from the style lines below and uncomment the @use in styles.scss.
+Adjust the colors and layout to match the visual direction you choose for your portfolio.
+*/
+
+// .openshelf {
+//     section {
+//         height: auto;
+//         margin: 1.5rem 0;
+//     }
+//
+//     h2,
+//     h3,
+//     h4 {
+//         color: $main-color;
+//     }
+// }
+//
+// #book-search-form,
+// .openshelf-review-form {
+//     display: grid;
+//     gap: 0.75rem;
+//     max-width: 42rem;
+// }
+//
+// #book-search,
+// .openshelf-review-form select,
+// .openshelf-review-form textarea {
+//     font: inherit;
+//     padding: 0.65rem;
+// }
+//
+// .openshelf-book-list {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+//     gap: 1rem;
+//     margin-top: 1rem;
+// }
+//
+// .openshelf-card {
+//     display: grid;
+//     grid-template-columns: auto 1fr;
+//     align-items: start;
+//     gap: 1rem;
+//     padding: 1rem;
+//     background: $background-color;
+//     border: 1px solid #ccc;
+//     border-radius: 0.5rem;
+// }
+//
+// .openshelf-card img {
+//     width: 5rem;
+//     max-height: 8rem;
+//     object-fit: cover;
+// }
+//
+// .openshelf-card-details h4 {
+//     margin-top: 0;
+// }
+//
+// .openshelf-card button,
+// #book-search-form button,
+// .openshelf-review-form button {
+//     width: fit-content;
+//     min-height: 2.75rem;
+//     padding: 0.5rem 0.8rem;
+//     font: inherit;
+//     cursor: pointer;
+// }
+//
+// .openshelf-status[data-state="error"] {
+//     color: #a00000;
+// }
+//
+// .openshelf-status[data-state="loading"] {
+//     font-style: italic;
+// }
+//
+// .openshelf-status[data-state="success"] {
+//     color: #245b2a;
+// }
+//
+// @media (max-width: 30rem) {
+//     .openshelf-card {
+//         grid-template-columns: 1fr;
+//     }
+// }

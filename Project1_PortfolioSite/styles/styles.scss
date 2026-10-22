@@ -5,6 +5,8 @@
 @use "components/footer";
 @use "components/project-cards";
 @use "components/form";
+// OpenShelf styles reference: uncomment after enabling the OpenShelf page.
+// @use "components/openshelf";
 
 * {
     box-sizing: border-box;
